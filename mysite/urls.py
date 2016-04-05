@@ -11,3 +11,4 @@ urlpatterns = [
     #Django ahora redirigirá todo lo que vaya hacia 'http://127.0.0.1:8000/' a blog.urls y buscará más instrucciones allí.
     url(r'', include('blog.urls')),
 ]
+
