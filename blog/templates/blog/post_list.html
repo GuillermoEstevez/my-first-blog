@@ -8,16 +8,14 @@
                 <h1><a href="">Django Girls Blog</a></h1>
             </div>
             
-            <div>
-	    {% for post in posts %}
+	    {% for ppp in posts %}
 		<div>
+		    <h1><a href="">{{ ppp.title }}</a></h1>
                     <p>carambas</p>
-		    <p>published: {{ post.published_date }}</p>
-		    <h1><a href="">{{ post.title }}</a></h1>
-		    <p>{{ post.text|linebreaks }}</p>
+		    <p>published: {{ ppp.published_date }}</p>
+		    <p>{{ ppp.text|linebreaks }}</p>
 		</div>
 	    {% endfor %}
-            </div>
-
+            
         </body>
     </html>
